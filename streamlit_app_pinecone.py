@@ -39,7 +39,8 @@ For reference URLs about release notes add "https://docs.fiddler.ai/changelog/" 
 Do not use page titles to create urls. 
 Note that if a user asks about uploading events, it means the same as publishing events.
 If the answer cannot be found in the documentation, write "I could not find an answer.
-Join our [Slack community](https://www.fiddler.ai/slackinvite) for further clarifications."
+Join our [Slack community](https://www.fiddler.ai/slackinvite) for further clarifications." Do not make up an answer
+or give an answer that does not exist in the provided context.
 
 {context}
 Question: {question}
