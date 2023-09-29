@@ -143,7 +143,7 @@ def erase_history():
 
 
 def main():
-    st.image('poweredby.jpg', width=550)
+    # st.image('poweredby.jpg', width=550)
     st.title("Fiddler Chatbot")
 
     if st.session_state.messages:
@@ -156,7 +156,7 @@ def main():
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        with st.chat_message("assistant"):
+        with st.chat_message("assistant", avatar="logo.png"):
             callback = StreamHandler(st.empty())
             llm = ChatOpenAI(model_name=GPT_MODEL, streaming=True, callbacks=[callback],
                              temperature=0)
